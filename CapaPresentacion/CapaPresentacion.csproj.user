@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Categoria\PCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Categoria\PCategoriaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Categoria\PCategoriaNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cliente\PCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cliente\PClienteEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cliente\PPClienteNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Compra\PCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Compra\PCompraEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Compra\PCompraNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoadingTienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MsmConfirmaEditDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PrecioProducto\PPrecioProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PrecioProducto\PPrecioProductoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PrecioProducto\PPrecioProductoNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Producto\PProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Producto\PProductoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Producto\PProductoNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Promotor\PPromotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Promotor\PPromotorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Promotor\PPromotorNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Usuario\PUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Usuario\PUsuarioEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Usuario\PUsuarioNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Venta\PVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

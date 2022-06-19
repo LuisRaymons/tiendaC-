@@ -1,0 +1,174 @@
+﻿namespace CapaPresentacion.PrecioProducto
+{
+    partial class PPrecioProductoNew
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtprecio = new System.Windows.Forms.TextBox();
+            this.selectproducts = new System.Windows.Forms.ComboBox();
+            this.btnguardar = new System.Windows.Forms.Button();
+            this.btncancelar = new System.Windows.Forms.Button();
+            this.errorProvidermsm = new System.Windows.Forms.ErrorProvider(this.components);
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvidermsm)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SpringGreen;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(433, 52);
+            this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Precio de Producto Nuevo";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.cerraricon;
+            this.pictureBox1.Location = new System.Drawing.Point(406, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Producto";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(25, 151);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Precio";
+            // 
+            // txtprecio
+            // 
+            this.txtprecio.Location = new System.Drawing.Point(93, 151);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(295, 23);
+            this.txtprecio.TabIndex = 3;
+            this.txtprecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtprecio_KeyPress);
+            // 
+            // selectproducts
+            // 
+            this.selectproducts.FormattingEnabled = true;
+            this.selectproducts.Location = new System.Drawing.Point(97, 94);
+            this.selectproducts.Name = "selectproducts";
+            this.selectproducts.Size = new System.Drawing.Size(291, 23);
+            this.selectproducts.TabIndex = 4;
+            // 
+            // btnguardar
+            // 
+            this.btnguardar.Location = new System.Drawing.Point(35, 198);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnguardar.Size = new System.Drawing.Size(353, 23);
+            this.btnguardar.TabIndex = 5;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
+            // 
+            // btncancelar
+            // 
+            this.btncancelar.Location = new System.Drawing.Point(35, 227);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(353, 23);
+            this.btncancelar.TabIndex = 6;
+            this.btncancelar.Text = "Cancelar";
+            this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
+            // 
+            // errorProvidermsm
+            // 
+            this.errorProvidermsm.ContainerControl = this;
+            // 
+            // PPrecioProductoNew
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(436, 267);
+            this.Controls.Add(this.btncancelar);
+            this.Controls.Add(this.btnguardar);
+            this.Controls.Add(this.selectproducts);
+            this.Controls.Add(this.txtprecio);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "PPrecioProductoNew";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "PPrecioProductoNew";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvidermsm)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private Panel panel1;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private Label label2;
+        private Label label3;
+        private TextBox txtprecio;
+        private ComboBox selectproducts;
+        private Button btnguardar;
+        private Button btncancelar;
+        private ErrorProvider errorProvidermsm;
+    }
+}
