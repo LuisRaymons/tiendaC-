@@ -44,7 +44,7 @@
             this.dataGridViewpromotor.Name = "dataGridViewpromotor";
             this.dataGridViewpromotor.ReadOnly = true;
             this.dataGridViewpromotor.RowTemplate.Height = 25;
-            this.dataGridViewpromotor.Size = new System.Drawing.Size(1050, 550);
+            this.dataGridViewpromotor.Size = new System.Drawing.Size(1004, 500);
             this.dataGridViewpromotor.TabIndex = 0;
             this.dataGridViewpromotor.DoubleClick += new System.EventHandler(this.dataGridViewpromotor_DoubleClick);
             // 
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.ClientSize = new System.Drawing.Size(1004, 546);
             this.Controls.Add(this.txtbusqueda);
             this.Controls.Add(this.btnnewpromotor);
             this.Controls.Add(this.dataGridViewpromotor);

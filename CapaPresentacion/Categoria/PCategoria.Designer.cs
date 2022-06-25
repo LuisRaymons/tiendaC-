@@ -43,7 +43,7 @@
             this.datagridviewcategoria.Name = "datagridviewcategoria";
             this.datagridviewcategoria.ReadOnly = true;
             this.datagridviewcategoria.RowTemplate.Height = 25;
-            this.datagridviewcategoria.Size = new System.Drawing.Size(1050, 550);
+            this.datagridviewcategoria.Size = new System.Drawing.Size(1005, 500);
             this.datagridviewcategoria.TabIndex = 0;
             this.datagridviewcategoria.DoubleClick += new System.EventHandler(this.datagridviewcategoria_DoubleClick);
             // 
@@ -73,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.ClientSize = new System.Drawing.Size(1004, 546);
             this.Controls.Add(this.txtbuscarcategoria);
             this.Controls.Add(this.btnagregarcategoria);
             this.Controls.Add(this.datagridviewcategoria);

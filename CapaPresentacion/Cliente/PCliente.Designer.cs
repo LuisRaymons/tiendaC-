@@ -40,11 +40,11 @@
             this.dataGridViewCliente.AllowUserToDeleteRows = false;
             this.dataGridViewCliente.AllowUserToOrderColumns = true;
             this.dataGridViewCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCliente.Location = new System.Drawing.Point(0, 51);
+            this.dataGridViewCliente.Location = new System.Drawing.Point(-1, 51);
             this.dataGridViewCliente.Name = "dataGridViewCliente";
             this.dataGridViewCliente.ReadOnly = true;
             this.dataGridViewCliente.RowTemplate.Height = 25;
-            this.dataGridViewCliente.Size = new System.Drawing.Size(1050, 550);
+            this.dataGridViewCliente.Size = new System.Drawing.Size(1005, 500);
             this.dataGridViewCliente.TabIndex = 0;
             this.dataGridViewCliente.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewCliente_CellFormatting);
             this.dataGridViewCliente.DoubleClick += new System.EventHandler(this.dataGridViewCliente_DoubleClick);
@@ -72,7 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.ClientSize = new System.Drawing.Size(1004, 546);
             this.Controls.Add(this.txtbusqueda);
             this.Controls.Add(this.btnaddclient);
             this.Controls.Add(this.dataGridViewCliente);

@@ -44,7 +44,7 @@
             this.dataGridViewProductos.Name = "dataGridViewProductos";
             this.dataGridViewProductos.ReadOnly = true;
             this.dataGridViewProductos.RowTemplate.Height = 25;
-            this.dataGridViewProductos.Size = new System.Drawing.Size(1050, 550);
+            this.dataGridViewProductos.Size = new System.Drawing.Size(1005, 500);
             this.dataGridViewProductos.TabIndex = 0;
             this.dataGridViewProductos.DoubleClick += new System.EventHandler(this.dataGridViewProductos_DoubleClick);
             // 
@@ -71,13 +71,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 500);
+            this.ClientSize = new System.Drawing.Size(1004, 546);
             this.Controls.Add(this.btnnewproduct);
             this.Controls.Add(this.txtbusquedaproducto);
             this.Controls.Add(this.dataGridViewProductos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PProducto";
             this.Text = "PProducto";
+            this.Load += new System.EventHandler(this.PProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -37,6 +37,12 @@
     <Compile Update="MsmConfirmaEditDelete.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="msminputnumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="PrecioProducto\PPrecioProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Venta\PVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Venta\PVentaNew.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

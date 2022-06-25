@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
 // ventanas
 using CapaPresentacion.Categoria;
@@ -19,16 +10,77 @@ using CapaPresentacion.Compra;
 using CapaPresentacion.Venta;
 using CapaPresentacion.PrecioProducto;
 
-
 namespace CapaPresentacion
 {
     public partial class FrmPrincipal : Form
     {
         private int widthslidenormal = 1050;
         private int widthslidemaimizar = 1280;
-        public FrmPrincipal()
+        private int iduser;
+        public FrmPrincipal(int iduser,string nombre,string type)
         {
             InitializeComponent();
+            this.iduser = iduser;
+            this.labelnameuser.Text = nombre;
+
+            if (type == "Administrador")
+            {
+                this.loadingadminuser();
+            } else if (type == "Ventas")
+            {
+                this.loadingventasuser();
+            } else if (type == "Almacen")
+            {
+                this.loadingalmacenuser();
+            } else if (type == "Cliente")
+            {
+                this.loadingclienteuser();
+            }            
+        }
+
+        public void loadingadminuser()
+        {
+            this.btnCategorias.Enabled = true;
+            this.btnProductos.Enabled = true;
+            this.btncliente.Enabled = true;
+            this.btnusuario.Enabled = true;
+            this.btnpromotor.Enabled = true;
+            this.btncompra.Enabled = true;
+            this.btnventa.Enabled = true;
+            this.btnprecio.Enabled = true;
+        }
+        public void loadingventasuser()
+        {
+            this.btnCategorias.Enabled = true;
+            this.btnProductos.Enabled = true;
+            this.btncliente.Enabled = false;
+            this.btnusuario.Enabled = false;
+            this.btnpromotor.Enabled = true;
+            this.btncompra.Enabled = false;
+            this.btnventa.Enabled = true;
+            this.btnprecio.Enabled = false;
+        }
+        public void loadingalmacenuser()
+        {
+            this.btnCategorias.Enabled = false;
+            this.btnProductos.Enabled = true;
+            this.btncliente.Enabled = false;
+            this.btnusuario.Enabled = false;
+            this.btnpromotor.Enabled = true;
+            this.btncompra.Enabled = true;
+            this.btnventa.Enabled = false;
+            this.btnprecio.Enabled = false;
+        }
+        public void loadingclienteuser()
+        {
+            this.btnCategorias.Enabled = false;
+            this.btnProductos.Enabled = false;
+            this.btncliente.Enabled = false;
+            this.btnusuario.Enabled = false;
+            this.btnpromotor.Enabled = false;
+            this.btncompra.Enabled = false;
+            this.btnventa.Enabled = false;
+            this.btnprecio.Enabled = false;
         }
 
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
@@ -40,17 +92,15 @@ namespace CapaPresentacion
         {
             if(menuVertical.Width == 250)
             {
-                menuVertical.Width = 70;
-                icontienda.Width = 70;
-                // modificar el pannel container
-                panelcontenedor.Width = this.widthslidenormal;
+                menuVertical.Width = 50;
+                icontienda.Width = 50;
+                this.labelnameuser.Width = 50;
             }
             else
             {
                 menuVertical.Width = 250;
                 icontienda.Width = 250;
-                // modificar el pannel conainer maximizar
-                panelcontenedor.Width = this.widthslidemaimizar;
+                this.labelnameuser.Width = 250;
             }
         }
 
@@ -64,7 +114,6 @@ namespace CapaPresentacion
             this.WindowState = FormWindowState.Maximized;
             iconrestaurar.Visible = true;
             iconminimizar.Visible = false;
-            //this.panelcontenedor.Width = 330;
         }
 
         private void iconminimizar_Click(object sender, EventArgs e)
@@ -128,7 +177,7 @@ namespace CapaPresentacion
 
         private void btnventa_Click(object sender, EventArgs e)
         {
-            this.AbrirFormInPanel(new PVenta());
+            this.AbrirFormInPanel(new PVenta(iduser));
         }
 
         private void btnpromotor_Click(object sender, EventArgs e)
@@ -139,6 +188,14 @@ namespace CapaPresentacion
         private void iconButton1_Click(object sender, EventArgs e)
         {
             this.AbrirFormInPanel(new PPrecioProducto());
+        }
+
+        private void btncerrarsession_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            //Application.Exit();
+            PLogin loginfrm = new PLogin();
+            loginfrm.ShowDialog();   
         }
     }
 }

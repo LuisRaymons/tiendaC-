@@ -44,7 +44,7 @@
             this.dataGridViewprecioproduct.Name = "dataGridViewprecioproduct";
             this.dataGridViewprecioproduct.ReadOnly = true;
             this.dataGridViewprecioproduct.RowTemplate.Height = 25;
-            this.dataGridViewprecioproduct.Size = new System.Drawing.Size(1004, 546);
+            this.dataGridViewprecioproduct.Size = new System.Drawing.Size(1005, 500);
             this.dataGridViewprecioproduct.TabIndex = 0;
             this.dataGridViewprecioproduct.DoubleClick += new System.EventHandler(this.dataGridViewprecioproduct_DoubleClick);
             // 
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 592);
+            this.ClientSize = new System.Drawing.Size(1004, 546);
             this.Controls.Add(this.txtbusqueda);
             this.Controls.Add(this.btnprrecioproductnew);
             this.Controls.Add(this.dataGridViewprecioproduct);

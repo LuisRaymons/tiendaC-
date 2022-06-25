@@ -44,7 +44,7 @@
             this.dataGridViewUsuario.Name = "dataGridViewUsuario";
             this.dataGridViewUsuario.ReadOnly = true;
             this.dataGridViewUsuario.RowTemplate.Height = 25;
-            this.dataGridViewUsuario.Size = new System.Drawing.Size(1050, 550);
+            this.dataGridViewUsuario.Size = new System.Drawing.Size(1004, 500);
             this.dataGridViewUsuario.TabIndex = 0;
             this.dataGridViewUsuario.DoubleClick += new System.EventHandler(this.dataGridViewUsuario_DoubleClick);
             // 
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.ClientSize = new System.Drawing.Size(1004, 546);
             this.Controls.Add(this.txtbusqueda);
             this.Controls.Add(this.btnnewusuario);
             this.Controls.Add(this.dataGridViewUsuario);

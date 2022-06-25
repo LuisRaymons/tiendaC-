@@ -87,5 +87,9 @@ namespace CapaPresentacion.Producto
             this.dataGridViewProductos.DataSource = NProducto.peticionesData("TextoBuscar",0,this.txtbusquedaproducto.Text,"","", imgn,0);
         }
 
+        private void PProducto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

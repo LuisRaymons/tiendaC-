@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.menuVertical = new System.Windows.Forms.Panel();
+            this.btncerrarsession = new FontAwesome.Sharp.IconButton();
+            this.labelnameuser = new System.Windows.Forms.Label();
+            this.btnprecio = new FontAwesome.Sharp.IconButton();
             this.btnpromotor = new FontAwesome.Sharp.IconButton();
             this.btncompra = new FontAwesome.Sharp.IconButton();
             this.btnventa = new FontAwesome.Sharp.IconButton();
@@ -44,7 +47,6 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnslider = new System.Windows.Forms.PictureBox();
             this.panelcontenedor = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.menuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icontienda)).BeginInit();
             this.barratitulo.SuspendLayout();
@@ -58,7 +60,9 @@
             // menuVertical
             // 
             this.menuVertical.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.menuVertical.Controls.Add(this.iconButton1);
+            this.menuVertical.Controls.Add(this.btncerrarsession);
+            this.menuVertical.Controls.Add(this.labelnameuser);
+            this.menuVertical.Controls.Add(this.btnprecio);
             this.menuVertical.Controls.Add(this.btnpromotor);
             this.menuVertical.Controls.Add(this.btncompra);
             this.menuVertical.Controls.Add(this.btnventa);
@@ -70,8 +74,54 @@
             this.menuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuVertical.Location = new System.Drawing.Point(0, 0);
             this.menuVertical.Name = "menuVertical";
-            this.menuVertical.Size = new System.Drawing.Size(250, 650);
+            this.menuVertical.Size = new System.Drawing.Size(252, 650);
             this.menuVertical.TabIndex = 0;
+            // 
+            // btncerrarsession
+            // 
+            this.btncerrarsession.BackColor = System.Drawing.Color.DarkCyan;
+            this.btncerrarsession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrarsession.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btncerrarsession.ForeColor = System.Drawing.Color.White;
+            this.btncerrarsession.IconChar = FontAwesome.Sharp.IconChar.Sign;
+            this.btncerrarsession.IconColor = System.Drawing.Color.White;
+            this.btncerrarsession.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btncerrarsession.IconSize = 35;
+            this.btncerrarsession.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncerrarsession.Location = new System.Drawing.Point(0, 385);
+            this.btncerrarsession.Name = "btncerrarsession";
+            this.btncerrarsession.Size = new System.Drawing.Size(250, 43);
+            this.btncerrarsession.TabIndex = 16;
+            this.btncerrarsession.Text = "Cerrar Session";
+            this.btncerrarsession.UseVisualStyleBackColor = false;
+            this.btncerrarsession.Click += new System.EventHandler(this.btncerrarsession_Click);
+            // 
+            // labelnameuser
+            // 
+            this.labelnameuser.AutoSize = true;
+            this.labelnameuser.Location = new System.Drawing.Point(12, 431);
+            this.labelnameuser.Name = "labelnameuser";
+            this.labelnameuser.Size = new System.Drawing.Size(0, 15);
+            this.labelnameuser.TabIndex = 15;
+            // 
+            // btnprecio
+            // 
+            this.btnprecio.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnprecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnprecio.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnprecio.ForeColor = System.Drawing.Color.White;
+            this.btnprecio.IconChar = FontAwesome.Sharp.IconChar.Tag;
+            this.btnprecio.IconColor = System.Drawing.Color.White;
+            this.btnprecio.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnprecio.IconSize = 35;
+            this.btnprecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnprecio.Location = new System.Drawing.Point(0, 342);
+            this.btnprecio.Name = "btnprecio";
+            this.btnprecio.Size = new System.Drawing.Size(250, 43);
+            this.btnprecio.TabIndex = 14;
+            this.btnprecio.Text = "Producto PRecio";
+            this.btnprecio.UseVisualStyleBackColor = false;
+            this.btnprecio.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // btnpromotor
             // 
@@ -80,7 +130,7 @@
             this.btnpromotor.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnpromotor.ForeColor = System.Drawing.Color.White;
             this.btnpromotor.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.btnpromotor.IconColor = System.Drawing.Color.Black;
+            this.btnpromotor.IconColor = System.Drawing.Color.White;
             this.btnpromotor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnpromotor.IconSize = 35;
             this.btnpromotor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -99,7 +149,7 @@
             this.btncompra.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btncompra.ForeColor = System.Drawing.Color.White;
             this.btncompra.IconChar = FontAwesome.Sharp.IconChar.ShippingFast;
-            this.btncompra.IconColor = System.Drawing.Color.Black;
+            this.btncompra.IconColor = System.Drawing.Color.White;
             this.btncompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncompra.IconSize = 35;
             this.btncompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,7 +168,7 @@
             this.btnventa.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnventa.ForeColor = System.Drawing.Color.White;
             this.btnventa.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.btnventa.IconColor = System.Drawing.Color.Black;
+            this.btnventa.IconColor = System.Drawing.Color.White;
             this.btnventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnventa.IconSize = 35;
             this.btnventa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -137,7 +187,7 @@
             this.btnusuario.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnusuario.ForeColor = System.Drawing.Color.White;
             this.btnusuario.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.btnusuario.IconColor = System.Drawing.Color.Black;
+            this.btnusuario.IconColor = System.Drawing.Color.White;
             this.btnusuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnusuario.IconSize = 35;
             this.btnusuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -156,7 +206,7 @@
             this.btncliente.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btncliente.ForeColor = System.Drawing.Color.White;
             this.btncliente.IconChar = FontAwesome.Sharp.IconChar.UserTag;
-            this.btncliente.IconColor = System.Drawing.Color.Black;
+            this.btncliente.IconColor = System.Drawing.Color.White;
             this.btncliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncliente.IconSize = 35;
             this.btncliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,7 +225,7 @@
             this.btnProductos.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnProductos.ForeColor = System.Drawing.Color.White;
             this.btnProductos.IconChar = FontAwesome.Sharp.IconChar.BoxOpen;
-            this.btnProductos.IconColor = System.Drawing.Color.Black;
+            this.btnProductos.IconColor = System.Drawing.Color.White;
             this.btnProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProductos.IconSize = 35;
             this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,7 +244,7 @@
             this.btnCategorias.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCategorias.ForeColor = System.Drawing.Color.White;
             this.btnCategorias.IconChar = FontAwesome.Sharp.IconChar.Boxes;
-            this.btnCategorias.IconColor = System.Drawing.Color.Black;
+            this.btnCategorias.IconColor = System.Drawing.Color.White;
             this.btnCategorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCategorias.IconSize = 35;
             this.btnCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -224,9 +274,9 @@
             this.barratitulo.Controls.Add(this.iconcerrar);
             this.barratitulo.Controls.Add(this.btnslider);
             this.barratitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barratitulo.Location = new System.Drawing.Point(250, 0);
+            this.barratitulo.Location = new System.Drawing.Point(252, 0);
             this.barratitulo.Name = "barratitulo";
-            this.barratitulo.Size = new System.Drawing.Size(1050, 50);
+            this.barratitulo.Size = new System.Drawing.Size(1048, 50);
             this.barratitulo.TabIndex = 1;
             this.barratitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barratitulo_MouseDown);
             // 
@@ -235,7 +285,7 @@
             this.iconrestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconrestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconrestaurar.Image = global::CapaPresentacion.Properties.Resources.restaurar;
-            this.iconrestaurar.Location = new System.Drawing.Point(975, 3);
+            this.iconrestaurar.Location = new System.Drawing.Point(973, 3);
             this.iconrestaurar.Name = "iconrestaurar";
             this.iconrestaurar.Size = new System.Drawing.Size(20, 20);
             this.iconrestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -248,7 +298,7 @@
             this.iconminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconminimizar.Image = global::CapaPresentacion.Properties.Resources.minimizaricon;
-            this.iconminimizar.Location = new System.Drawing.Point(949, 3);
+            this.iconminimizar.Location = new System.Drawing.Point(947, 3);
             this.iconminimizar.Name = "iconminimizar";
             this.iconminimizar.Size = new System.Drawing.Size(20, 20);
             this.iconminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -261,7 +311,7 @@
             this.iconmaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconmaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconmaximizar.Image = global::CapaPresentacion.Properties.Resources.maximizaricon;
-            this.iconmaximizar.Location = new System.Drawing.Point(1001, 3);
+            this.iconmaximizar.Location = new System.Drawing.Point(999, 3);
             this.iconmaximizar.Name = "iconmaximizar";
             this.iconmaximizar.Size = new System.Drawing.Size(20, 20);
             this.iconmaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -274,7 +324,7 @@
             this.iconcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconcerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconcerrar.Image = global::CapaPresentacion.Properties.Resources.cerraricon;
-            this.iconcerrar.Location = new System.Drawing.Point(1027, 3);
+            this.iconcerrar.Location = new System.Drawing.Point(1025, 3);
             this.iconcerrar.Name = "iconcerrar";
             this.iconcerrar.Size = new System.Drawing.Size(20, 20);
             this.iconcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -297,29 +347,10 @@
             // panelcontenedor
             // 
             this.panelcontenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelcontenedor.Location = new System.Drawing.Point(250, 50);
+            this.panelcontenedor.Location = new System.Drawing.Point(252, 50);
             this.panelcontenedor.Name = "panelcontenedor";
-            this.panelcontenedor.Size = new System.Drawing.Size(1050, 600);
+            this.panelcontenedor.Size = new System.Drawing.Size(1048, 600);
             this.panelcontenedor.TabIndex = 2;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.DarkCyan;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Tag;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 35;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(3, 341);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(250, 43);
-            this.iconButton1.TabIndex = 14;
-            this.iconButton1.Text = "Producto PRecio";
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // FrmPrincipal
             // 
@@ -333,6 +364,7 @@
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
             this.menuVertical.ResumeLayout(false);
+            this.menuVertical.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icontienda)).EndInit();
             this.barratitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconrestaurar)).EndInit();
@@ -362,6 +394,8 @@
         private FontAwesome.Sharp.IconButton btnProductos;
         private FontAwesome.Sharp.IconButton btnCategorias;
         private FontAwesome.Sharp.IconButton btnpromotor;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnprecio;
+        private Label labelnameuser;
+        private FontAwesome.Sharp.IconButton btncerrarsession;
     }
 }

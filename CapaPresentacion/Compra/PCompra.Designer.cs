@@ -44,7 +44,7 @@
             this.dataGridViewcompra.Name = "dataGridViewcompra";
             this.dataGridViewcompra.ReadOnly = true;
             this.dataGridViewcompra.RowTemplate.Height = 25;
-            this.dataGridViewcompra.Size = new System.Drawing.Size(1050, 550);
+            this.dataGridViewcompra.Size = new System.Drawing.Size(1004, 500);
             this.dataGridViewcompra.TabIndex = 0;
             this.dataGridViewcompra.DoubleClick += new System.EventHandler(this.dataGridViewcompra_DoubleClick);
             // 
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.ClientSize = new System.Drawing.Size(1004, 546);
             this.Controls.Add(this.txtbusqueda);
             this.Controls.Add(this.btnagregarcompra);
             this.Controls.Add(this.dataGridViewcompra);

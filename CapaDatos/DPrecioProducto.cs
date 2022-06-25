@@ -84,7 +84,7 @@ namespace CapaDatos
                 responde = cmd.ExecuteNonQuery().ToString();
             } catch(Exception ex)
             {
-                responde = "Error al realizar la la actualizacion";
+                responde = null;
             }
             finally
             {
