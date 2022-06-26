@@ -8,8 +8,8 @@
 
 #### Instalación:
 1: Abre SQL SERVER y abre una nueva consulta.
-2: Instala la base de datos que se encuentra [aqui](https://github.com/LuisRaymons/tiendaC-/blob/e7f17191eefd60791c4ae45c8be75598a1cc2e32/Base%20de%20datos/tiendavirtual.sql "aqui")
-3: Abre Visual Studio, abre la solucion que se encuentra [aqui](https://github.com/LuisRaymons/tiendaC-/blob/e7f17191eefd60791c4ae45c8be75598a1cc2e32/tienda.sln "aqui")
+2: Instala la base de datos que se encuentra [aqui](https://github.com/LuisRaymons/tiendaC-/blob/e7f17191eefd60791c4ae45c8be75598a1cc2e32/Base%20de%20datos/tiendavirtual.sql "aqui").
+3: Abre Visual Studio, abre la solucion que se encuentra [aqui](https://github.com/LuisRaymons/tiendaC-/blob/e7f17191eefd60791c4ae45c8be75598a1cc2e32/tienda.sln "aqui").
 
 #### Versionado
 1.0.0 :
