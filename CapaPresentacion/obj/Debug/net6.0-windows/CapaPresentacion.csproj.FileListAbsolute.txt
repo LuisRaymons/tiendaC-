@@ -63,3 +63,6 @@ C:\Users\lvalencia\source\repos\tienda\CapaPresentacion\obj\Debug\net6.0-windows
 C:\Users\lvalencia\source\repos\tienda\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.PLogin.resources
 C:\Users\lvalencia\source\repos\tienda\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.Venta.PVentaNew.resources
 C:\Users\lvalencia\source\repos\tienda\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.msminputnumer.resources
+C:\Users\lvalencia\source\repos\tienda\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.FrmPagoEfectivo.resources
+C:\Users\lvalencia\source\repos\tienda\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.MsmConfirmaDetalleEliminar.resources
+C:\Users\lvalencia\source\repos\tienda\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.Venta.PVentaDetalle.resources

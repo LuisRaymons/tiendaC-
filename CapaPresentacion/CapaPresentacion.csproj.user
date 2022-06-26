@@ -28,6 +28,12 @@
     <Compile Update="Compra\PCompraNew.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MsmConfirmaDetalleEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmPagoEfectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Venta\PVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Venta\PVentaDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Venta\PVentaNew.cs">

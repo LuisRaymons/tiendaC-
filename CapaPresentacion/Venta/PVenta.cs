@@ -58,19 +58,21 @@ namespace CapaPresentacion.Venta
 
         private void dataGridViewventas_DoubleClick(object sender, EventArgs e)
         {
-            MsmConfirmaEditDelete msmconf = new MsmConfirmaEditDelete();
-            msmconf.ShowDialog();
+            MsmConfirmaDetalleEliminar msm = new MsmConfirmaDetalleEliminar();
+            msm.ShowDialog();
 
-            int confirm = msmconf.ismodif;
+            int confirm = msm.isdetalle;
             int idselect = Convert.ToInt32(this.dataGridViewventas.CurrentRow.Cells["id"].Value);
+            string facturaselect = Convert.ToString(this.dataGridViewventas.CurrentRow.Cells["factura"].Value);
 
             if (confirm == 1)
             {
-                this.mensajeerror("No se pude modificar una venta, solo elimine la venta y registre una nueva venta");
+                PVentaDetalle pVentaDetalle = new PVentaDetalle(facturaselect);
+                pVentaDetalle.ShowDialog();
             }
             else if (confirm == 2)
             {
-                DialogResult Eliminarcate = MessageBox.Show("¿Quieres eliminar el precio de producto seleccionado?", "Eliminar precio", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                DialogResult Eliminarcate = MessageBox.Show("¿Quieres eliminar la venta seleccionada?", "Eliminar venta", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
                 if (Eliminarcate == DialogResult.OK)
                 {

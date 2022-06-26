@@ -184,8 +184,22 @@ namespace CapaPresentacion.Venta
                 this.loadings.Hide();
                 if (banderainserts)
                 {
-                    this.mensajeok("Se registro con exito la venta");
-                    this.Close();
+                    // Pago en efectivo
+                    if(Convert.ToInt32(this.selectpago.SelectedValue) == 1) // Efectivo
+                    {
+                        FrmPagoEfectivo fpe = new FrmPagoEfectivo(preciototal);
+                        fpe.ShowDialog();
+                        if (fpe.pagobandera)
+                        {
+                            this.mensajeok("Se registro con exito la venta");
+                            this.Close();
+                        }
+                        else
+                        {
+                            this.pictureBox1.Enabled = false;
+                            this.button2.Enabled = false;
+                        }
+                    }  
                 }
                 else
                 {
